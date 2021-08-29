@@ -25,5 +25,11 @@ Further reading:
 
 ## Chapter 1 - Dealing with Errors and Asking for Help
 
+- [Python Help](https://www.python.org/about/help/)
+- [How do I as a good question on Stack Overflow](https://stackoverflow.com/help/how-to-ask/)
+- [Learn Python at Reddit](https://www.reddit.com/r/learnpython/)
+
+## Chapter 2 - Environment Setup and the Command Line
+
 
 
