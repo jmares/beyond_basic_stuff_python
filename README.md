@@ -22,6 +22,11 @@ Further reading:
 - Python Cookbook (O’Reilly Media, 2013) by David Beazley and Brian K. Jones
 - Fluent Python (O’Reilly Media, 2021) by Luciano Ramalho
 
+---
+
+Part I - Getting Started
+
+---
 
 ## Chapter 1 - Dealing with Errors and Asking for Help
 
@@ -31,5 +36,45 @@ Further reading:
 
 ## Chapter 2 - Environment Setup and the Command Line
 
+```python
+from pathlib import Path
+Path.home()     # home directory of user
+Path.cwd()      # current working directory
+```
 
+Recommended reading for using the command line:
+
+- The Linux Command Line, 2nd Edition (2019) by William Shotts, 
+- Linux Basics for Hackers (2018) by OccupyTheWeb,
+- PowerShell for Sysadmins (2020) by Adam Bertram
+
+History command on MS Windows:
+
+```bash
+doskey /history
+```
+
+List subfolder contents on MS Windows:
+
+```bash
+dir /s *.py
+```
+
+List subfolder contents on macOS and Linux:
+
+```bash
+find . -name "*.py"
+```
+
+Viewing environment variables with `set` (on Windows) or `env` (on macOS and Linux).
+
+View the current path variable with `path` (on Windows) or `echo $PATH` (on macOS and Linux).
+
+---
+
+Part 2 - Best Practices, Tools, and Techniques
+
+---
+
+## Chapter 3 - Code Formatting with Black
 
