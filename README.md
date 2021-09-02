@@ -78,3 +78,8 @@ Part 2 - Best Practices, Tools, and Techniques
 
 ## Chapter 3 - Code Formatting with Black
 
+- [PEP 8 - Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
+- [Black](https://github.com/psf/black/)
+
+## Chapter 4 - Choosing Understandable Names
+
