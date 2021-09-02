@@ -83,3 +83,6 @@ Part 2 - Best Practices, Tools, and Techniques
 
 ## Chapter 4 - Choosing Understandable Names
 
+- [PEP8 - Naming Conventions](https://www.python.org/dev/peps/pep-0008/#naming-conventions)
+
+## Chapter 5 - Finding Code Smells
