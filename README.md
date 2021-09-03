@@ -86,3 +86,16 @@ Part 2 - Best Practices, Tools, and Techniques
 - [PEP8 - Naming Conventions](https://www.python.org/dev/peps/pep-0008/#naming-conventions)
 
 ## Chapter 5 - Finding Code Smells
+
+A *code smell* is a source code pattern that signals potential bugs.
+
+Examples:
+
+- duplicate code
+- magic numbers
+- commented-out code and dead code
+- print debugging
+- variables with numeric suffixes
+- classes that should just Be functions or modules
+- list comprehensions within list comprehensions
+- empty except blocks and poor error messages
