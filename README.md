@@ -198,3 +198,13 @@ If exact precision is needed, use the `decimal` module.
 - Don’t chain inequality `!=` operators
 
 - Don’t forget the comma in single-item tuples
+
+## Chapter 9 - Esoteric Python Oddities
+
+- Preallocated integers
+- String interning
+- Python’s fake increment and decrement operators
+- `all(list)` as evaluating the claim “none of the items in this list are falsey”
+- Boolean values are integer values
+- Chaining multiple kinds of operators
+- Python’s antigravity feature
