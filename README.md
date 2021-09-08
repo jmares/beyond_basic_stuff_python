@@ -142,3 +142,59 @@ Examples
 - Use dictionaries instead of a `switch` statement
 - Python’s ugly ternary operator
 - Chaining assignment and comparison operators
+
+## Chapter 7 - Programming Jargon
+
+```python
+def spam():
+    print('Spam! Spam! Spam!')
+
+spam()
+# Spam! Spam! Spam!
+
+nospam = spam
+nospam()
+# Spam! Spam! Spam!
+
+def twice(func):
+    func()
+    func()
+
+twice()
+# Spam! Spam! Spam!
+# Spam! Spam! Spam!
+```
+
+## Chapter 8 - Common Python Gotchas
+
+- Don’t add or delete items from a list while looping over it.    
+
+The best practice is to create a new list rather than modifying an existing one.   
+
+- Don’t copy mutable values without `copy.copy()` and `copy.deepcopy()`.    
+
+Use `copy.copy()` for a list and `copy.deepcopy()` for a list of lists.
+
+- Don’t use mutable values for default arguments.
+
+Using a mutable object (e.g. a list) for the default argument has a subtle problem: the list is created when the function’s def statement executes, not each time the function is called. Any changes made to that list when the function is called, will affect the function the next time it is called.
+
+- Don’t build strings with string concatenation
+
+The pythonic way to build strings is to append the smaller strings to a list and then join the list together into one string.   
+See script `buildstrings.py`.
+
+- Don’t expect `sort()` to sort alphabetically
+
+```python
+letters = ['z', 'A', 'a', 'Z']
+letters.sort(key=str.lower)
+```
+
+- Don’t assume floating-point numbers are perfectly accurate
+
+If exact precision is needed, use the `decimal` module.
+
+- Don’t chain inequality `!=` operators
+
+- Don’t forget the comma in single-item tuples
