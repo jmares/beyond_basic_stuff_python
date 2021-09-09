@@ -208,3 +208,34 @@ If exact precision is needed, use the `decimal` module.
 - Boolean values are integer values
 - Chaining multiple kinds of operators
 - Python’s antigravity feature
+
+## Chapter 10 - Effective Functions
+
+**Function Names**:
+
+Descriptive and containing a verb.
+
+**Function Size Trade-Offs**:
+
+**Function Parameters and Arguments**
+
+- Default Arguments
+- Using * and ** to Pass Arguments to Functions
+- Using * to Create Variadic Functions
+- Using ** to Create Variadic Functions
+- Using * and ** to Create Wrapper Functions
+
+**Functional Programming**
+
+Functional programming is a programming paradigm that emphasizes writing functions that perform calculations without modifying global variables or any external state.
+
+- Side Effects
+- Higher-Order Functions
+- Lambda Functions
+- Mapping and Filtering with List Comprehensions
+
+To define a Python lambda function, use the lambda keyword, followed by a comma-delimited list of parameters (if any), a colon, and then an expression that acts as the return value. Because functions are first-class objects, you can assign a lambda function to a variable, effectively replicating what a def statement does.
+
+**Return Values Should Always Have the Same Data Type**
+
+**Raising Exceptions vs. Returning Error Codes**
