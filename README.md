@@ -239,3 +239,75 @@ To define a Python lambda function, use the lambda keyword, followed by a comma-
 **Return Values Should Always Have the Same Data Type**
 
 **Raising Exceptions vs. Returning Error Codes**
+
+## Chapter 11 - Comments, Docstrings, and Type Hints
+
+> “Programs must be written for people to read,     
+> and only incidentally for machines to execute.”   
+
+**Comments**
+
+```python
+# This is a single-line comment.
+
+"""This is a
+multiline string that
+also works as a multiline comment. """
+```
+
+Codetags
+
+| Tag    | Description     | 
+|:------ |:--------------- |
+| #TODO  | Introduces a general reminder about work that needs to be done |
+| #FIXME | Introduces a reminder that this part of the code doesn’t entirely work |
+| #HACK  | Introduces a reminder that this part of the code works, perhaps barely, but that the code should be improved |
+| #XXX   | Introduces a general warning, often of high severity |
+
+
+**Docstrings**
+
+Docstrings are multiline comments that appear either at the top of a module’s `.py` source code file or directly following a `class` or `def` statement.
+
+```python
+def get(self, url, **kwargs):
+    """Sends a GET request. Returns :class:`Response` object.
+
+    :param url: URL for the new :class:`Request` object.
+    :param \*\*kwargs: Optional arguments that ``request`` takes.
+    :rtype: requests.Response
+    """
+...
+```
+
+**Type Hints**
+
+```python
+def describeNumber(number: int) -> str:
+    if number % 2 == 1:
+        return 'An odd number. '
+    elif number == 42:
+        return 'The answer. '
+    else:
+        return 'Yes, that is a number. '
+
+myLuckyNumber: int = 42
+print(describeNumber(myLuckyNumber))
+```
+
+Although Python supports syntax for type hints, the Python interpreter completely ignores them. You will need to install a third-party type checker like Mypy.
+
+To specify type hints with multiple types, import `Union` from the built-in `typing` module.
+
+```python
+from typing import Union
+spam: Union[int, str, float] = 42
+spam = 'hello'
+spam = 3.14
+```
+
+## Chapter 12 - Organizing Your Code Projects with Git
+
+- Use [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.3/) to create new (complex) Python projects
+- [Pro Git by Scott Charcon](https://git-scm.com/book/en/v2)
+- [Version Control by Example by Eric Sink]()
