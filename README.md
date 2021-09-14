@@ -311,3 +311,21 @@ spam = 3.14
 - Use [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.3/) to create new (complex) Python projects
 - [Pro Git by Scott Charcon](https://git-scm.com/book/en/v2)
 - [Version Control by Example by Eric Sink]()
+
+## Chapter 13 - Measuring Performance and Big O Algorithm Analysis
+
+Modules used:
+
+- `timeit`: for small snippets of code
+- `cProfile`: for entire functions or programs
+
+Code from book to test cProfile
+
+```python
+import cProfile, rsaCipher
+cProfile.run("rsaCipher.encryptAndWriteToFile('encrypted_file.txt', 'al_sweigart_pubkey.txt', 'abc'*100000)")
+```
+
+**Big O Algorithm Analysis**
+
+> How code slows as data grows.
