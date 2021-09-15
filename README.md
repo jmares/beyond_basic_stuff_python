@@ -329,3 +329,7 @@ cProfile.run("rsaCipher.encryptAndWriteToFile('encrypted_file.txt', 'al_sweigart
 **Big O Algorithm Analysis**
 
 > How code slows as data grows.
+
+## Chapter 14 - Practice Projects
+
+1. The Tower of Hanoi
