@@ -335,3 +335,15 @@ cProfile.run("rsaCipher.encryptAndWriteToFile('encrypted_file.txt', 'al_sweigart
 1. The Tower of Hanoi
 2. Four in a Row
 
+## Chapter 15 - Object-Oriented Programming and Classes
+
+The `__qualname__` attribute:
+
+```python
+>>> type(42)  # The object 42 has a type of int.
+<class 'int'>
+str(type(42))  # Passing the type object to str() returns a messy string.
+"<class 'int'>"
+>>> type(42).__qualname__ # The __qualname__ attribute is nicer looking.
+'int'
+```
