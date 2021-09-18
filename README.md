@@ -348,7 +348,17 @@ str(type(42))  # Passing the type object to str() returns a messy string.
 'int'
 ```
 
-# Chapter 16 - Object-Oriented Programming and Inheritance
+# #Chapter 16 - Object-Oriented Programming and Inheritance
 
 > Creating multiple levels of inheritance doesn’t add organization  
 >so much as bureaucracy to your code.
+
+## Chapter 17 - Pythonic OOP: Properties and Dunder Methods
+
+**Properties**:
+
+Designating an attribute as private is only a convention: all attributes in Python are technically public, meaning they’re accessible to code outside the class. There’s nothing to prevent code from intentionally or maliciously changing an attribute to an invalid value.
+
+**Dunder methods**:
+
+Python has several special method names that begin and end with double underscores, abbreviated as dunder. These methods are called dunder methods, special methods, or magic methods. You’re already familiar with the __init__() dunder method name, but Python has several more. We often use them for operator overloading—that is, adding custom behaviors that allow us to use objects of our classes with Python operators, such as + or >=. Other dunder methods let objects of our classes work with Python’s built-in functions, such as len() or repr(). 
