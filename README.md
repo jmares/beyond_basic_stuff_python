@@ -347,3 +347,8 @@ str(type(42))  # Passing the type object to str() returns a messy string.
 >>> type(42).__qualname__ # The __qualname__ attribute is nicer looking.
 'int'
 ```
+
+# Chapter 16 - Object-Oriented Programming and Inheritance
+
+> Creating multiple levels of inheritance doesn’t add organization  
+>so much as bureaucracy to your code.
